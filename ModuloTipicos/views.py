@@ -1,6 +1,14 @@
+from django.http import HttpResponse
 from django.shortcuts import render
-
-# Create your views here.
+from django.template.exceptions import TemplateDoesNotExist, TemplateSyntaxError
 
 def lista_tipicos(request):
-    return render(request, 'ModuloTipicos/lista-tipicos.html')
+    try:
+        return render(request, "ModuloTipicos/lista-tipicos.html")
+    except TemplateDoesNotExist as e:
+        return HttpResponse(f"NO ENCONTRE TEMPLATE: {e}", status=500)
+    except TemplateSyntaxError as e:
+        return HttpResponse(f"ERROR DE SINTAXIS EN TEMPLATE: {e}", status=500)
+    except Exception as e:
+        return HttpResponse(f"OTRO ERROR: {e}", status=500)
+
