@@ -60,7 +60,7 @@ ROOT_URLCONF = 'ComidaSalvadorena.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'ModuloTipicos' / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
