@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Platos Típicos de El Salvador: Pupusas, Yuca Frita y más | Sabor Salvadoreño</title>
+    
+    <meta name="description" content="Descubre los 8 platos típicos más deliciosos de El Salvador: Pupusas, Yuca Frita con Chicharrón, Sopa de Pata, Tamales y más. ¡Tradición y sabor en cada receta!">
+    
+    <link rel="canonical" href="https://saborsalvadoreno.com/tipicos/">
+
+    <link rel="icon" type="image/png" href="/static/img/pupusa-icon.png"> 
+    
+    <meta property="og:title" content="🇸🇻 ¡El Sabor de El Salvador! Descubre los Mejores Platos Típicos">
+    <meta property="og:description" content="Explora las Pupusas, Yuca Frita, Sopa de Pata y toda la gastronomía salvadoreña que te encantará.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://saborsalvadoreno.com/tipicos/">
+    <meta property="og:image" content="https://saborsalvadoreno.com/static/img/pupusa-hero.jpg">
+    <meta property="og:site_name" content="Sabor Salvadoreño">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@SaborSV_Oficial"> <meta name="twitter:creator" content="@SaborSV_Oficial">
+
+    <style>
+        /* [ ... Tu CSS original aquí ... ] */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+            animation: fadeInDown 1s ease;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .platos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .plato-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: fadeInUp 0.6s ease;
+        }
+
+        .plato-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+        }
+
+        .plato-imagen {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4em;
+        }
+
+        .plato-contenido {
+            padding: 20px;
+        }
+
+        .plato-titulo {
+            font-size: 1.8em;
+            color: #333;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .plato-descripcion {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .plato-ingredientes {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .plato-ingredientes h4 {
+            color: #667eea;
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+
+        .plato-ingredientes ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .plato-ingredientes li {
+            padding: 5px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .plato-ingredientes li:before {
+            content: "🌿";
+            position: absolute;
+            left: 0;
+        }
+
+        .plato-precio {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        footer {
+            text-align: center;
+            color: white;
+            margin-top: 40px;
+            padding: 20px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 10px;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            .platos-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🇸🇻 Platos Típicos de El Salvador 🇸🇻</h1>
+            <p>Descubre los sabores auténticos de nuestra tierra</p>
+            </header>
+
+        <div class="platos-grid">
+            <div class="plato-card">
+                <div class="plato-imagen">🫓</div>
+                <div class="plato-contenido">
+                    <h2 class="plato-titulo">Pupusas</h2> 
+                    <p class="plato-descripcion">
+                        Las **pupusas** son el plato nacional de El Salvador. Son tortillas gruesas de maíz o arroz 
+                        rellenas de diversos ingredientes, servidas con curtido y salsa de tomate.
+                        </p>
+                    <div class="plato-ingredientes">
+                        <h4>Ingredientes principales:</h4>
+                        <ul>
+                            <li>Masa de maíz o arroz</li>
+                            <li>Queso, frijoles o chicharrón</li>
+                            <li>Curtido (ensalada de repollo)</li>
+                            <li>Salsa de tomate</li>
+                        </ul>
+                    </div>
+                    <span class="plato-precio">$0.50 - $1.00 c/u</span>
+                </div>
+            </div>
+
+            <div class="plato-card">
+                <div class="plato-imagen">🍠</div>
+                <div class="plato-contenido">
+                    <h2 class="plato-titulo">Yuca Frita con Chicharrón</h2>
+                    <p class="plato-descripcion">
+                        Deliciosa **yuca** cocida y frita, servida con **chicharrón de cerdo** crujiente, 
+                        curtido y salsa de tomate. Un clásico de la gastronomía salvadoreña.
+                    </p>
+                    <div class="plato-ingredientes">
+                        <h4>Ingredientes principales:</h4>
+                        <ul>
+                            <li>Yuca</li>
+                            <li>Chicharrón de cerdo</li>
+                            <li>Curtido</li>
+                            <li>Salsa de tomate</li>
+                            <li>Pepescas (pescaditos fritos)</li>
+                        </ul>
+                    </div>
+                    <span class="plato-precio">$3.00 - $5.00</span>
+                </div>
+            </div>
+
+            <div class="plato-card">
+                <div class="plato-imagen">🥖</div>
+                <div class="plato-contenido">
+                    <h2 class="plato-titulo">Panes con Pollo</h2>
+                    <p class="plato-descripcion">
+                        **Pan francés** relleno con **pollo** desmenuzado en salsa, acompañado de ensalada, 
+                        pepino, rábano y salsa. Ideal para cualquier hora del día.
+                    </p>
+                    <div class="plato-ingredientes">
+                        <h4>Ingredientes principales:</h4>
+                        <ul>
+                            <li>Pan francés</li>
+                            <li>Pollo en salsa</li>
+                            <li>Ensalada de repollo</li>
+                            <li>Pepino y rábano</li>
+                            <li>Salsa especial</li>
+                        </ul>
+                    </div>
+                    <span class="plato-precio">$2.50 - $4.00</span>
+                </div>
+            </div>
+
+            <div class="plato-card">
+                <div class="plato-imagen">🍲</div>
+                <div class="plato-contenido">
+                    <h2 class="plato-titulo">Sopa de Pata</h2>
+                    <p class="plato-descripcion">
+                        **Sopa tradicional** hecha con **patas de res**, verduras, maíz y especias. 
+                        Un plato reconfortante lleno de sabor y tradición.
+                    </p>
+                    <div class="plato-ingredientes">
+                        <h4>Ingredientes principales:</h4>
+                        <ul>
+                            <li>Patas de res</li>
+                            <li>Yuca y plátano verde</li>
+                            <li>Maíz y ejotes</li>
+                            <li>Verduras variadas</li>
+                            <li>Especias</li>
+                        </ul>
+                    </div>
+                    <span class="plato-precio">$4.00 - $6.00</span>
+                </div>
+            </div>
+
+            <div class="plato-card">
+                <div class="plato-imagen">🌽</div>
+                <div class="plato-contenido">
+                    <h2 class="plato-titulo">Tamales Salvadoreños</h2>
+                    <p class="plato-descripcion">
+                        **Tamales de elote** (maíz tierno) o de gallina envueltos en **hojas de plátano**. 
+                        Perfectos para el desayuno o cualquier ocasión especial.
+                    </p>
+                    <div class="plato-ingredientes">
+                        <h4>Ingredientes principales:</h4>
+                        <ul>
+                            <li>Masa de maíz</li>
+                            <li>Pollo o gallina</li>
+                            <li>Pasas y aceitunas</li>
+                            <li>Hojas de plátano</li>
+                            <li>Especias</li>
+                        </ul>
+                    </div>
+                    <span class="plato-precio">$1.50 - $2.50 c/u</span>
+                </div>
+            </div>
+
+            <div class="plato-card">
+                <div class="plato-imagen">🥟</div>
+                <div class="plato-contenido">
+                    <h2 class="plato-titulo">Pastelitos</h2>
+                    <p class="plato-descripcion">
+                        **Empanadas de masa de maíz** rellenas de carne o pollo, fritas hasta dorar. 
+                        Servidas con curtido y salsa. Perfectas como antojito.
+                    </p>
+                    <div class="plato-ingredientes">
+                        <h4>Ingredientes principales:</h4>
+                        <ul>
+                            <li>Masa de maíz</li>
+                            <li>Carne molida o pollo</li>
+                            <li>Verduras</li>
+                            <li>Curtido</li>
+                            <li>Salsa de tomate</li>
+                        </ul>
+                    </div>
+                    <span class="plato-precio">$0.50 - $1.00 c/u</span>
+                </div>
+            </div>
+
+            <div class="plato-card">
+                <div class="plato-imagen">☕</div>
+                <div class="plato-contenido">
+                    <h2 class="plato-titulo">Atol de Elote</h2>
+                    <p class="plato-descripcion">
+                        **Bebida caliente y cremosa** hecha de **maíz tierno** molido, leche y canela. 
+                        Perfecta para acompañar el desayuno o la cena.
+                    </p>
+                    <div class="plato-ingredientes">
+                        <h4>Ingredientes principales:</h4>
+                        <ul>
+                            <li>Elote (maíz tierno)</li>
+                            <li>Leche</li>
+                            <li>Azúcar</li>
+                            <li>Canela</li>
+                            <li>Sal</li>
+                        </ul>
+                    </div>
+                    <span class="plato-precio">$1.00 - $2.00</span>
+                </div>
+            </div>
+
+            <div class="plato-card">
+                <div class="plato-imagen">🍌</div>
+                <div class="plato-contenido">
+                    <h2 class="plato-titulo">Empanadas de Plátano</h2>
+                    <p class="plato-descripcion">
+                        Deliciosas **empanadas dulces** hechas de **plátano maduro** rellenas de leche poleada 
+                        o frijoles, espolvoreadas con azúcar.
+                    </p>
+                    <div class="plato-ingredientes">
+                        <h4>Ingredientes principales:</h4>
+                        <ul>
+                            <li>Plátano maduro</li>
+                            <li>Leche poleada o frijoles</li>
+                            <li>Azúcar</li>
+                            <li>Canela</li>
+                            <li>Aceite para freír</li>
+                        </ul>
+                    </div>
+                    <span class="plato-precio">$0.75 - $1.50 c/u</span>
+                </div>
+            </div>
+            
+            <div class="plato-card">
+                <div class="plato-imagen">🦐</div>
+                <div class="plato-contenido">
+                    <h2 class="plato-titulo">Mariscada Salvadoreña</h2>
+                    <p class="plato-descripcion">
+                        **Sopa de mariscos** variados con crema, llena de sabor marino. 
+                        Incluye camarones, pescado, almejas y más. Un clásico de la costa.
+                    </p>
+                    <div class="plato-ingredientes">
+                        <h4>Ingredientes principales:</h4>
+                        <ul>
+                            <li>Camarones</li>
+                            <li>Pescado</li>
+                            <li>Almejas y mejillones</li>
+                            <li>Crema y leche</li>
+                            <li>Verduras y especias</li>
+                        </ul>
+                    </div>
+                    <span class="plato-precio">$8.00 - $12.00</span>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>🌟 Sabor Salvadoreño - Tradición y Sabor en Cada Plato 🌟</p>
+            <p>© 2025 - El Salvador, Centroamérica</p>
+        </footer>
+    </div>
+</body>
+</html>
