@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -7,6 +8,10 @@
     <title>Platos Típicos de El Salvador: Pupusas, Yuca Frita y más | Sabor Salvadoreño</title>
     
     <meta name="description" content="Descubre los 8 platos típicos más deliciosos de El Salvador: Pupusas, Yuca Frita con Chicharrón, Sopa de Pata, Tamales y más. ¡Tradición y sabor en cada receta!">
+    <link rel="stylesheet" href="{% static 'css/lista-tipicos.css' %}">
+    <!-- Si usas Flask (Jinja2), usa en su lugar:
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    -->
     
     <link rel="canonical" href="https://saborsalvadoreno.com/tipicos/">
 
@@ -22,173 +27,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@SaborSV_Oficial"> <meta name="twitter:creator" content="@SaborSV_Oficial">
 
-    <style>
-        /* [ ... Tu CSS original aquí ... ] */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            padding: 20px;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        header {
-            text-align: center;
-            color: white;
-            margin-bottom: 40px;
-            animation: fadeInDown 1s ease;
-        }
-
-        header h1 {
-            font-size: 3em;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-        }
-
-        header p {
-            font-size: 1.2em;
-            opacity: 0.9;
-        }
-
-        .platos-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-bottom: 40px;
-        }
-
-        .plato-card {
-            background: white;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            animation: fadeInUp 0.6s ease;
-        }
-
-        .plato-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
-        }
-
-        .plato-imagen {
-            width: 100%;
-            height: 200px;
-            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 4em;
-        }
-
-        .plato-contenido {
-            padding: 20px;
-        }
-
-        .plato-titulo {
-            font-size: 1.8em;
-            color: #333;
-            margin-bottom: 10px;
-            font-weight: bold;
-        }
-
-        .plato-descripcion {
-            color: #666;
-            line-height: 1.6;
-            margin-bottom: 15px;
-        }
-
-        .plato-ingredientes {
-            background: #f8f9fa;
-            padding: 15px;
-            border-radius: 8px;
-            margin-bottom: 15px;
-        }
-
-        .plato-ingredientes h4 {
-            color: #667eea;
-            margin-bottom: 8px;
-            font-size: 1.1em;
-        }
-
-        .plato-ingredientes ul {
-            list-style: none;
-            padding-left: 0;
-        }
-
-        .plato-ingredientes li {
-            padding: 5px 0;
-            padding-left: 20px;
-            position: relative;
-        }
-
-        .plato-ingredientes li:before {
-            content: "🌿";
-            position: absolute;
-            left: 0;
-        }
-
-        .plato-precio {
-            display: inline-block;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 10px 20px;
-            border-radius: 25px;
-            font-weight: bold;
-            font-size: 1.1em;
-        }
-
-        footer {
-            text-align: center;
-            color: white;
-            margin-top: 40px;
-            padding: 20px;
-            background: rgba(255,255,255,0.1);
-            border-radius: 10px;
-        }
-
-        @keyframes fadeInDown {
-            from {
-                opacity: 0;
-                transform: translateY(-30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2em;
-            }
-
-            .platos-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
 </head>
 <body>
     <div class="container">
