@@ -18,10 +18,12 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path, include
+from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     # Incluye todas las rutas definidas en ModuloTipicos/urls.py
     # Serán accesibles bajo el prefijo '/tipicos/'
     path('tipicos/', include('ModuloTipicos.urls')),
+    path('', views.lista_tipicos, name='home'),  # Ruta para la página de inicio
 ]
