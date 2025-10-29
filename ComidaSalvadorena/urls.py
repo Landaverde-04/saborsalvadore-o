@@ -19,8 +19,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from ModuloTipicos import views
+from django.http import HttpResponse
+
+def robots_txt(request):
+    content = "User-agent: *\nAllow: /\nSitemap: https://saborsalvadore-o.onrender.com/sitemap.xml"
+    return HttpResponse(content, content_type="text/plain")
 
 urlpatterns = [
+    path("robots.txt", robots_txt),
     path('admin/', admin.site.urls),
     path('', views.lista_tipicos, name='inicio'),
     path('tipicos/', include('ModuloTipicos.urls')),
