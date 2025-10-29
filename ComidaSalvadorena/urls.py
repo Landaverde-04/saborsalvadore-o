@@ -22,8 +22,7 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # Incluye todas las rutas definidas en ModuloTipicos/urls.py
-    # Serán accesibles bajo el prefijo '/tipicos/'
+    path('', views.lista_tipicos, name='inicio'),
     path('tipicos/', include('ModuloTipicos.urls')),
-    path('', views.lista_tipicos, name='home'),  # Ruta para la página de inicio
+      # Ruta para la página de inicio
 ]
