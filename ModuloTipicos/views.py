@@ -4,7 +4,7 @@ from django.template.exceptions import TemplateDoesNotExist, TemplateSyntaxError
 
 def lista_tipicos(request):
     try:
-        return render(request, "ModuloTipicos/lista-tipicos.html")
+        return render(request, "lista-tipicos.html")
     except TemplateDoesNotExist as e:
         return HttpResponse(f"NO ENCONTRE TEMPLATE: {e}", status=500)
     except TemplateSyntaxError as e:
