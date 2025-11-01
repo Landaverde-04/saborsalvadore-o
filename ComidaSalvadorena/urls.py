@@ -24,7 +24,11 @@ from django.contrib.sitemaps import Sitemap
 from django.contrib.sitemaps.views import sitemap
 
 def robots_txt(request):
-    content = "User-agent: *\nAllow: /\nSitemap: https://saborsalvadore-o.onrender.com/sitemap.xml"
+    content = (
+        "User-agent: *\n"
+        "Allow: /\n"
+        "Sitemap: https://saborsalvadore-o.onrender.com/sitemap.xml"
+    )
     return HttpResponse(content, content_type="text/plain")
 
 urlpatterns = [
