@@ -3,5 +3,4 @@ Disallow: /nogooglebot/
 
 User-agent: *
 Allow: /
-
 Sitemap: https://saborsalvadore-o.onrender.com/sitemap.xml
