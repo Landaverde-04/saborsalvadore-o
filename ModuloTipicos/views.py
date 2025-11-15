@@ -12,3 +12,14 @@ def lista_tipicos(request):
     except Exception as e:
         return HttpResponse(f"OTRO ERROR: {e}", status=500)
 
+
+def nuevo_plato(request):
+    try:
+        return render(request, "nuevo-plato.html")
+    except TemplateDoesNotExist as e:
+        return HttpResponse(f"NO ENCONTRE TEMPLATE: {e}", status=500)
+    except TemplateSyntaxError as e:
+        return HttpResponse(f"ERROR DE SINTAXIS EN TEMPLATE: {e}", status=500)
+    except Exception as e:
+        return HttpResponse(f"OTRO ERROR: {e}", status=500)
+

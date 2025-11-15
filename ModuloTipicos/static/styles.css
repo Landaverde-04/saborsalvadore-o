@@ -1,0 +1,306 @@
+/* =========================================================
+   Estilos Modernizados – Sitio Tecnológico UES
+   ========================================================= */
+
+/* Paleta y base */
+:root {
+  --bg: #0b1220;
+  --panel: #0f172a;
+  --text: #e2e8f0;
+  --link: #38bdf8;
+  --link-visited: #fb923c;
+  --accent: #1d4ed8;
+  --glow: rgba(56, 189, 248, 0.25);
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  background: 
+    linear-gradient(160deg, var(--bg), #0a101c),
+    url("imagenes/fondo_index.jpg") no-repeat center top fixed;
+  background-size: cover;
+  color: var(--text);
+  line-height: 1.6;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* =========================================================
+   Encabezado
+   ========================================================= */
+
+.top {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  padding: 16px 20px;
+  background: linear-gradient(145deg, var(--panel), #0c1426);
+  border-bottom: 1px solid #1e293b;
+  box-shadow: 0 2px 15px rgba(56, 189, 248, 0.08);
+  backdrop-filter: blur(4px);
+}
+
+.logo {
+  border-radius: 10px;
+  border: 2px solid var(--accent);
+  box-shadow: 0 0 12px var(--glow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px var(--glow);
+}
+
+.titular p {
+  margin: 2px 0;
+}
+
+.titular .instancia {
+  font-weight: bold;
+  color: var(--link);
+  letter-spacing: 0.5px;
+}
+
+/* =========================================================
+   Contenido principal
+   ========================================================= */
+
+.contenedor {
+  max-width: 920px;
+  margin: 24px auto;
+  padding: 0 20px;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 8px 0 16px;
+  color: var(--link);
+  text-shadow: 0 0 10px var(--glow);
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin: 24px 0 8px;
+  color: var(--accent);
+}
+
+/* =========================================================
+   Lista de integrantes
+   ========================================================= */
+
+.listado {
+  padding: 16px 20px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  border-radius: 12px;
+  box-shadow: inset 0 0 12px rgba(56, 189, 248, 0.08);
+  backdrop-filter: blur(4px);
+}
+
+.listado li {
+  margin: 6px 0;
+}
+
+/* =========================================================
+   Navegación
+   ========================================================= */
+
+.nav {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+  justify-content: center;
+}
+
+.nav__link {
+  display: inline-block;
+  background: #0b2442;
+  border: 1px solid #1e3a8a;
+  padding: 10px 16px;
+  border-radius: 10px;
+  color: var(--link);
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 0 10px rgba(56, 189, 248, 0.08);
+  transition: all 0.3s ease;
+}
+
+.nav__link:hover {
+  background: var(--accent);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px var(--glow);
+  text-decoration: none;
+}
+
+/* =========================================================
+   Enlaces globales
+   ========================================================= */
+
+a { color: var(--link); }
+a:visited { color: var(--link-visited); }
+a:hover { text-decoration: underline; }
+
+/* =========================================================
+   Pie de página
+   ========================================================= */
+
+.pie {
+  margin-top: 36px;
+  padding: 16px 20px;
+  border-top: 1px solid #1e293b;
+  background: #0a101c;
+  color: #94a3b8;
+  font-size: 0.95rem;
+  text-align: center;
+  box-shadow: 0 -2px 10px rgba(56, 189, 248, 0.05);
+}
+
+/* =========================================================
+   Animaciones
+   ========================================================= */
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+/* === Estilo Tecnológico === */
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: radial-gradient(circle at top left, #0d1117, #010409);
+      color: #e6edf3;
+    }
+
+    header.top {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      padding: 1rem 2rem;
+      background: rgba(0, 0, 0, 0.7);
+      border-bottom: 1px solid #1f6feb;
+      box-shadow: 0 2px 10px rgba(31, 111, 235, 0.2);
+    }
+
+    .logo {
+      border-radius: 10px;
+      border: 2px solid #1f6feb;
+      transition: transform 0.3s ease;
+    }
+
+    .logo:hover {
+      transform: scale(1.05);
+    }
+
+    .titular p {
+      margin: 0;
+      font-size: 0.95rem;
+    }
+
+    .titular .instancia {
+      font-family: 'Orbitron', sans-serif;
+      color: #1f6feb;
+      font-size: 1.1rem;
+    }
+
+    main.contenedor {
+      padding: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    h1,
+    h2 {
+      font-family: 'Orbitron', sans-serif;
+      color: #58a6ff;
+      text-shadow: 0 0 10px rgba(31, 111, 235, 0.4);
+    }
+
+    ul.listado {
+      list-style: none;
+      padding: 0;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      padding: 1rem 1.5rem;
+      box-shadow: inset 0 0 8px rgba(31, 111, 235, 0.2);
+    }
+
+    ul.listado li {
+      margin: 0.4rem 0;
+    }
+
+    a {
+      color: #58a6ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    nav.nav {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+      gap: 1.2rem;
+      flex-wrap: wrap;
+    }
+
+    .nav__link {
+      padding: 0.6rem 1.2rem;
+      background: #1f6feb;
+      color: white;
+      border-radius: 6px;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 1px;
+      transition: all 0.3s ease;
+    }
+
+    .nav__link:hover {
+      background: #58a6ff;
+      transform: translateY(-2px);
+    }
+
+    footer.pie {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #8b949e;
+      border-top: 1px solid #1f6feb;
+      margin-top: 3rem;
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    .articulo img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin: 1rem auto;
+      box-shadow: 0 0 12px rgba(31, 111, 235, 0.3);
+    }
+
+    .articulo figure {
+      text-align: center;
+      margin: 1.5rem 0;
+    }
+
+    .articulo figcaption {
+      font-size: 0.9rem;
+      color: #94a3b8;
+      margin-top: 0.5rem;
+    }
+
